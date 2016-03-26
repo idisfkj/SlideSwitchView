@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:slideswitch="http://schemas.android.com/apk/res/com.idisfkj.slideswitchview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.idisfkj.slideswitchview.MainActivity">
+
+    <com.idisfkj.slideswitchview.view.SlideSwitchView
+        android:id="@+id/slide_switch"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        slideswitch:themeColor="#ffaaff"
+        slideswitch:shape="2"
+        slideswitch:isOpen="true"/>
+
+    <com.idisfkj.slideswitchview.view.SlideSwitchView
+        android:layout_marginTop="20dp"
+        android:id="@+id/slide_switch_rect"
+        android:layout_below="@id/slide_switch"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        slideswitch:themeColor="#ffaaff"
+        slideswitch:shape="1"
+        slideswitch:isOpen="false"/>
+
+</RelativeLayout>
+
